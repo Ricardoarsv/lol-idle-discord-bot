@@ -1,0 +1,10 @@
+import { DEFAULT_CONFIG } from './enums';
+
+
+export const DEFAULT_DDRAGON_VERSION = DEFAULT_CONFIG.VERSION_FALLBACK; 
+export const DEFAULT_LOCALE = DEFAULT_CONFIG.LOCALE;
+export const DEFAULT_LANGUAGE = DEFAULT_CONFIG.LANGUAGE;
+export const CACHE_TTL = 1000 * 60 * 60; 
+
+
+export { DEFAULT_CONFIG } from './enums';

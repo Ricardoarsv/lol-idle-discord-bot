@@ -1,0 +1,38 @@
+{
+	"name": "lol-guesser-bot",
+	"version": "1.0.0",
+	"description": "Bot de Discord para adivinar campeones de League of Legends",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/index.js",
+		"dev": "tsx watch src/index.ts",
+		"register": "tsx src/register-commands.ts",
+		"register:build": "npm run build && node dist/register-commands.js",
+		"test": "tsx test-bot.ts",
+		"clean": "rmdir /s /q dist 2>nul || echo \"Directorio dist no existe\"",
+		"prebuild": "npm run clean",
+		"typecheck": "tsc --noEmit",
+		"start:prod": "npm run build && npm run start"
+	},
+	"keywords": [
+		"discord",
+		"bot",
+		"league-of-legends",
+		"guesser"
+	],
+	"author": "Ricardo",
+	"license": "MIT",
+	"dependencies": {
+		"discord.js": "^14.14.1",
+		"dotenv": "^16.3.1",
+		"lru-cache": "^10.1.0",
+		"undici": "^6.6.2"
+	},
+	"devDependencies": {
+		"@types/node": "^24.6.2",
+		"nodemon": "^3.1.10",
+		"tsx": "^4.20.6",
+		"typescript": "^5.9.3"
+	}
+}
