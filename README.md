@@ -1,0 +1,2 @@
+# lol-idle-discord-bot
+
