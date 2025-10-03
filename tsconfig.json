@@ -1,8 +1,8 @@
 {
 	"compilerOptions": {
 		"target": "ES2022",
-		"module": "CommonJS",
-		"moduleResolution": "Node",
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
 		"lib": ["ES2022"],
 		"outDir": "./dist",
 		"rootDir": "./src",
@@ -24,7 +24,8 @@
 		"removeComments": false,
 		"resolveJsonModule": true,
 		"allowImportingTsExtensions": false,
-		"noEmit": false
+		"noEmit": false,
+		"paths": {}
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules", "dist", "**/*.js", "test-bot.ts"],
