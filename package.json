@@ -12,7 +12,6 @@
 		"dev": "tsx watch src/index.ts",
 		"register": "tsx src/register-commands.ts",
 		"register:build": "npm run build && node dist/register-commands.js",
-		"test": "tsx test-bot.ts",
 		"clean": "rmdir /s /q dist 2>nul || echo \"Directorio dist no existe\"",
 		"prebuild": "npm run clean",
 		"typecheck": "tsc --noEmit",

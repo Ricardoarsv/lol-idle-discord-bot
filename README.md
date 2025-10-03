@@ -2,15 +2,35 @@
 
 Bot de Discord para adivinar campeones de League of Legends usando la API de Data Dragon.
 
-## Características
+## 🎯 Características
 
 - 🎮 Juego de adivinanzas de campeones
 - 💡 Sistema de pistas (rol, recurso, rango, título, pasiva)
 - 📅 Modo diario con campeón del día
 - 🌍 Soporte para múltiples idiomas
 - 🚀 Comandos slash de Discord
+- 🏗️ Arquitectura limpia y escalable
 
-## Comandos
+## 🏗️ Arquitectura
+
+Este proyecto utiliza **Clean Architecture** para mantener el código organizado, testeable y escalable.
+
+### Estructura de carpetas
+
+```
+src/
+├── domain/           # Lógica de negocio
+├── infrastructure/   # Implementaciones concretas
+├── presentation/     # Interfaz (Discord)
+└── shared/          # Código compartido
+```
+
+📖 Ver documentación completa:
+- [CLEAN_ARCHITECTURE.md](CLEAN_ARCHITECTURE.md) - Guía de arquitectura
+- [ARCHITECTURE_DIAGRAM.md](ARCHITECTURE_DIAGRAM.md) - Diagramas visuales
+- [EXTENSION_GUIDE.md](EXTENSION_GUIDE.md) - Cómo extender el proyecto
+
+## 📋 Comandos
 
 - `/start` - Inicia una nueva partida
 - `/start daily:true` - Inicia partida con campeón del día
@@ -40,7 +60,41 @@ Bot de Discord para adivinar campeones de League of Legends usando la API de Dat
    npm start
    ```
 
-## Configuración de Discord
+## 🚀 Inicio Rápido
+
+### Desarrollo (con Clean Architecture)
+```bash
+npm run dev:clean
+```
+
+### Desarrollo (código original)
+```bash
+npm run dev
+```
+
+### Producción
+```bash
+npm run build
+npm run start
+```
+
+## 📚 Documentación Adicional
+
+- **[CLEAN_ARCHITECTURE.md](CLEAN_ARCHITECTURE.md)** - Explicación de la arquitectura
+- **[ARCHITECTURE_DIAGRAM.md](ARCHITECTURE_DIAGRAM.md)** - Diagramas y flujos
+- **[EXTENSION_GUIDE.md](EXTENSION_GUIDE.md)** - Guía para extender el proyecto
+- **[MIGRATION_SUMMARY.md](MIGRATION_SUMMARY.md)** - Resumen de la migración
+
+## 🎓 Aprende Más
+
+Este proyecto es un excelente ejemplo de:
+- Clean Architecture en TypeScript
+- Inyección de dependencias
+- Principios SOLID
+- Arquitectura por capas
+- Discord.js con TypeScript
+
+## 📄 Licencia
 
 1. Ve a https://discord.com/developers/applications
 2. Crea una nueva aplicación
